@@ -2,16 +2,56 @@
  * Created by win808mac on 8/8/16.
  */
 
-public class Kata {
+public class Kata{
+
+
+    /* or35 - Return true if the given non-negative number is a multiple of 3
+    //or a multiple of 5. Use the % "mod" operator.
+     */
+    public boolean or35(int n) {
+
+        if((n %  3 == 0) || (n % 5 == 0)) {
+            return true;
+        }
+        return false;
+
+    }
+
+    /** SKIPPED - Given a non-empty string and an int n,
+    //return a new string where the char at index n has been removed.
+    //The value of n will be a valid index of a char in the
+    //original string (i.e. n will be in the range 0..str.length()-1 inclusive).
+     **/
+    public String missingChar(String str, int n) {
+        String front = str.substring(0, n);
+
+        String back = str.substring(n+1, str.length());
+
+        return front + back;
+    }
+    /* notString *SKipped* Given a string, return a new string where "not " has been added
+    //to the front. However, if the string already begins with "not",
+    //return the string unchanged.
+    //Note: use .equals() to compare 2 strings. */
+    //public String notString(String str)
 
     /* Given 2 int values,
     //return true if one is negative and one is positive.
     //Except if the parameter "negative" is true, then return true only if both are negative.
      */
+    public boolean posNeg(int a, int b, boolean negative) {
+        if (negative) {
+            return ((a < 0) && (b < 0));
+        }
+        else {
+            return ((a < 0) && (b > 0) || (a > 0) && (b < 0));
+        }
+
+    }
 
     /* Given an int n, return true if it is within 10 of 100 or 200.
     //Note: Math.abs(num) computes the absolute value of a number. */
-    public boolean nextHundred(int n) {
+    public boolean nearHundred(int n) {
         //int num = Math.abs(n);
 
         if((Math.abs(100 - n) <= 10) || (Math.abs(200 - n) <= 10)) {

@@ -41,11 +41,30 @@ public class Main {
         //System.out.println(kata.makes10(9,9));
         //System.out.println(kata.makes10(9,10));
 
-        //near Hundres warm-up
-        System.out.println(kata.nextHundred(93));
-        System.out.println(kata.nextHundred(90));
-        System.out.println(kata.nextHundred(89));
+        //nearHundred warm-up
+        //System.out.println(kata.nearHundred(93));
+        //System.out.println(kata.nearHundred(90));
+        //System.out.println(kata.nearHundred(89));
 
+        //posNeg warm - up
+        //System.out.println(kata.posNeg(1,-1,false));
+        //System.out.println(kata.posNeg(-1,1,false));
+        //System.out.println(kata.posNeg(-4,-5,true));
+
+        //notString warm - up **SKIPPED**
+        //System.out.println(kata.notString("candy");
+        //System.out.println(kata.notString("x");
+        //System.out.println(kata.notString("not bad");
+
+        //missingChar warm - up *SKIPPED**
+        //System.out.println(kata.missingChar("kitten", 1));
+        //System.out.println(kata.missingChar("kitten", 0));
+        //System.out.println(kata.missingChar("kitten", 4));
+
+        //or35 warm - up
+        System.out.println(kata.or35(3));
+        System.out.println(kata.or35(10));
+        System.out.println(kata.or35(8));
     }
 
 
