@@ -62,9 +62,30 @@ public class Main {
         //System.out.println(kata.missingChar("kitten", 4));
 
         //or35 warm - up
-        System.out.println(kata.or35(3));
-        System.out.println(kata.or35(10));
-        System.out.println(kata.or35(8));
+        //System.out.println(kata.or35(3));
+        //System.out.println(kata.or35(10));
+        //System.out.println(kata.or35(8));
+
+        //startHi warm - up
+        //System.out.println(kata.startHi("hi there"));
+        //System.out.println(kata.startHi("hi"));
+        //System.out.println(kata.startHi("hello hi"));
+
+        //icyHot warm - up
+        //System.out.println(kata.icyHot(120,-1));
+        //System.out.println(kata.icyHot(-1,120));
+        //System.out.println(kata.icyHot(2,120));
+
+        //in1020 warm - up
+        //System.out.println(kata.in1020(12,99));
+        //System.out.println(kata.in1020(21,12));
+        //System.out.println(kata.in1020(8,99));
+
+        //hasTeen warm - up
+        System.out.println(kata.hasTeen(13,20,10));
+        System.out.println(kata.hasTeen(20,19,10));
+        System.out.println(kata.hasTeen(20,10,13));
+
     }
 
 
