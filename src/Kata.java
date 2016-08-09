@@ -4,6 +4,35 @@
 
 public class Kata{
 
+    public int close10(int a, int b) {
+        int aclose = Math.abs(a - 10);
+        int bclose = Math.abs(b - 10);
+        int closest = (Math.min(aclose, bclose)); {
+
+        return closest;
+        }
+
+    }
+
+    /*Given three int values, a b c, return the largest. */
+    public int intMax(int a, int b, int c) {
+        int largest = Math.max(a, b);
+
+        if((largest >= c)) {
+            return largest;
+        }
+            return c;
+
+    }
+
+    /*We'll say that a number is "teen" if it is in the range 13..19 inclusive.
+    //Given 2 int values, return true if one or the other is teen, but not both. */
+    public boolean loneTeen(int a, int b) {
+        if((a >= 13) && (a <= 19 ) && (b >= 13) && (b <= 19)) {
+            return false;
+        }
+        return true;
+    }
     /* We'll say that a number is "teen" if it is in the range 13..19 inclusive.
     //Given 3 int values, return true if 1 or more of them are teen.*/
     public boolean hasTeen(int a, int b, int c) {

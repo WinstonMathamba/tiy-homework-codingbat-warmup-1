@@ -82,9 +82,22 @@ public class Main {
         //System.out.println(kata.in1020(8,99));
 
         //hasTeen warm - up
-        System.out.println(kata.hasTeen(13,20,10));
-        System.out.println(kata.hasTeen(20,19,10));
-        System.out.println(kata.hasTeen(20,10,13));
+        //System.out.println(kata.hasTeen(13,20,10));
+        //System.out.println(kata.hasTeen(20,19,10));
+        //System.out.println(kata.hasTeen(20,10,13));
+
+        //loneTeen warm - up
+        //System.out.println(kata.loneTeen(13,99));
+        //System.out.println(kata.loneTeen(21,19));
+        //System.out.println(kata.loneTeen(13,13));
+
+        //intMax warm - up
+        //System.out.println(kata.intMax(1,2,3));
+        //System.out.println(kata.intMax(1,3,2));
+        //System.out.println(kata.intMax(3,2,1));
+
+        //close10 warm - up
+        System.out.println(kata.close10(8,13));
 
     }
 
