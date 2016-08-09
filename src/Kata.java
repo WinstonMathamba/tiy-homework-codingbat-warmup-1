@@ -4,6 +4,24 @@
 
 public class Kata{
 
+    /* Given 2 int values, return true if they are both in the range 30..40 inclusive,
+    //or they are both in the range 40..50 inclusive.  */
+    public boolean in3050(int a, int b) {
+        if((a >= 30) && (a <= 40 ) && (b >= 30) && (b <= 40)) {
+            return true;
+        }
+        else if ((a >= 40) && (a <= 50) && (b >= 40) && (b <= 50)) {
+            return true;
+        }
+            return false;
+
+    }
+
+    /** incomplete - Given 2 int values, return whichever value is nearest to the value 10,
+    //or return 0 in the event of a tie. Note that Math.abs(n) returns
+    //the absolute value of a number.*/
+
+
     public int close10(int a, int b) {
         int aclose = Math.abs(a - 10);
         int bclose = Math.abs(b - 10);
