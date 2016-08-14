@@ -50,16 +50,6 @@ public class Main {
         System.out.println(kata.posNeg(-1,1,false));
         System.out.println(kata.posNeg(-4,-5,true));
 
-        //notString warm - up **SKIPPED**
-        //System.out.println(kata.notString("candy");
-        //System.out.println(kata.notString("x");
-        //System.out.println(kata.notString("not bad");
-
-        //missingChar warm - up *SKIPPED**
-        //System.out.println(kata.missingChar("kitten", 1));
-        //System.out.println(kata.missingChar("kitten", 0));
-        //System.out.println(kata.missingChar("kitten", 4));
-
         //or35 warm - up
         System.out.println(kata.or35(3));
         System.out.println(kata.or35(10));
@@ -95,14 +85,15 @@ public class Main {
         System.out.println(kata.intMax(1,3,2));
         System.out.println(kata.intMax(3,2,1));
 
-        //close10 warm - up *SKIPPED*
-        //System.out.println(kata.close10(8,13));
-
-
-        //in3050 warm - u[
+        //in3050 warm - up
         System.out.println(kata.in3050(30,31));
         System.out.println(kata.in3050(30,41));
         System.out.println(kata.in3050(40,50));
+
+        //close10 warm up
+        //close10 warm - up *SKIPPED*
+        //System.out.println(kata.close10(8,13));
+
 
     }
 

@@ -16,23 +16,6 @@ public class Kata {
 
     }
 
-    /**
-     * incomplete - Given 2 int values, return whichever value is nearest to the value 10,
-     * //or return 0 in the event of a tie. Note that Math.abs(n) returns
-     * //the absolute value of a number.
-     */
-
-
-    public int close10(int a, int b) {
-        int aclose = Math.abs(a - 10);
-        int bclose = Math.abs(b - 10);
-        int closest = (Math.min(aclose, bclose));
-
-        return closest;
-
-
-    }
-
     /*Given three int values, a b c, return the largest. */
     public int intMax(int a, int b, int c) {
         int largest = Math.max(a, b);
@@ -103,29 +86,6 @@ public class Kata {
 
     }
 
-    /**
-     * SKIPPED - Given a non-empty string and an int n,
-     * //return a new string where the char at index n has been removed.
-     * //The value of n will be a valid index of a char in the
-     * //original string (i.e. n will be in the range 0..str.length()-1 inclusive).
-     **/
-    public String missingChar(String str, int n) {
-        String front = str.substring(0, n);
-
-        String back = str.substring(n + 1, str.length());
-
-        return front + back;
-    }
-    /* notString *SKipped* Given a string, return a new string where "not " has been added
-    //to the front. However, if the string already begins with "not",
-    //return the string unchanged.
-    //Note: use .equals() to compare 2 strings. */
-    //public String notString(String str)
-
-    /* Given 2 int values,
-    //return true if one is negative and one is positive.
-    //Except if the parameter "negative" is true, then return true only if both are negative.
-     */
     public boolean posNeg(int a, int b, boolean negative) {
         if (negative) {
             return ((a < 0) && (b < 0));
@@ -223,17 +183,30 @@ public class Kata {
     }
 
 
-    //exercise 1 for Kata
-    public String describeDay(int day) {
+//    //exercise 1 for Kata
+//    public String describeDay(int day) {
+//        if ((day <= 6) && (day >= 2)) {
+//            return "Today is a Weekday";
+//        } else if ((day == 7) || (day == 1)) {
+//            return "It's the weekend!";
+//        } else {
+//            return "It is the second Tuesday of next week..";
+//        }
+//
+//    }
 
+    /* Given 2 int values, return whichever value is nearest to the value 10,
+     //or return 0 in the event of a tie. Note that Math.abs(n) returns
+     //the absolute value of a number.
+     */
 
-        if ((day <= 6) && (day >= 2)) {
-            return "Today is a Weekday";
-        } else if ((day == 7) || (day == 1)) {
-            return "It's the weekend!";
-        } else {
-            return "It is the second Tuesday of next week..";
-        }
+    public int close10(int a, int b) {
+        int aclose = Math.abs(a - 10);
+        int bclose = Math.abs(b - 10);
+        int closest = (Math.min(aclose, bclose));
+
+        return closest;
+
 
     }
 
