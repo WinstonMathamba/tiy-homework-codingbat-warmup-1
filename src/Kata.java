@@ -2,33 +2,34 @@
  * Created by win808mac on 8/8/16.
  */
 
-public class Kata{
+public class Kata {
 
     /* Given 2 int values, return true if they are both in the range 30..40 inclusive,
     //or they are both in the range 40..50 inclusive.  */
     public boolean in3050(int a, int b) {
-        if((a >= 30) && (a <= 40 ) && (b >= 30) && (b <= 40)) {
+        if ((a >= 30) && (a <= 40) && (b >= 30) && (b <= 40)) {
+            return true;
+        } else if ((a >= 40) && (a <= 50) && (b >= 40) && (b <= 50)) {
             return true;
         }
-        else if ((a >= 40) && (a <= 50) && (b >= 40) && (b <= 50)) {
-            return true;
-        }
-            return false;
+        return false;
 
     }
 
-    /** incomplete - Given 2 int values, return whichever value is nearest to the value 10,
-    //or return 0 in the event of a tie. Note that Math.abs(n) returns
-    //the absolute value of a number.*/
+    /**
+     * incomplete - Given 2 int values, return whichever value is nearest to the value 10,
+     * //or return 0 in the event of a tie. Note that Math.abs(n) returns
+     * //the absolute value of a number.
+     */
 
 
     public int close10(int a, int b) {
         int aclose = Math.abs(a - 10);
         int bclose = Math.abs(b - 10);
-        int closest = (Math.min(aclose, bclose)); {
+        int closest = (Math.min(aclose, bclose));
 
         return closest;
-        }
+
 
     }
 
@@ -36,47 +37,48 @@ public class Kata{
     public int intMax(int a, int b, int c) {
         int largest = Math.max(a, b);
 
-        if((largest >= c)) {
+        if ((largest >= c)) {
             return largest;
         }
-            return c;
+        return c;
 
     }
 
     /*We'll say that a number is "teen" if it is in the range 13..19 inclusive.
     //Given 2 int values, return true if one or the other is teen, but not both. */
     public boolean loneTeen(int a, int b) {
-        if((a >= 13) && (a <= 19 ) && (b >= 13) && (b <= 19)) {
+        if ((a >= 13) && (a <= 19) && (b >= 13) && (b <= 19)) {
             return false;
         }
         return true;
     }
+
     /* We'll say that a number is "teen" if it is in the range 13..19 inclusive.
     //Given 3 int values, return true if 1 or more of them are teen.*/
     public boolean hasTeen(int a, int b, int c) {
-        if((a >= 13) && (a <= 19 ) || (b >= 13) && (b <= 19) || (c >= 13) && (c <= 19)) {
+        if ((a >= 13) && (a <= 19) || (b >= 13) && (b <= 19) || (c >= 13) && (c <= 19)) {
             return true;
         }
-            return false;
+        return false;
     }
 
     /* Given 2 int values, return true if either of
     //them is in the range 10..20 inclusive. */
     public boolean in1020(int a, int b) {
-        if((a >= 10) && (a <= 20 ) || (b >= 10) && (b <= 20)) {
+        if ((a >= 10) && (a <= 20) || (b >= 10) && (b <= 20)) {
             return true;
         }
-            return false;
+        return false;
     }
 
 
     /* icyHot - Given two temperatures, return true if one
     //is less than 0 and the other is greater than 100. */
     public boolean icyHot(int temp1, int temp2) {
-        if((temp1 < 0) && (temp2 > 100) || (temp1 > 100) && (temp2 < 0))
+        if ((temp1 < 0) && (temp2 > 100) || (temp1 > 100) && (temp2 < 0))
             return true;
 
-            return false;
+        return false;
     }
 
     /* startHi - Given a string, return true if the string starts with "hi"
@@ -86,7 +88,7 @@ public class Kata{
         if (str.length() >= 2 && str.substring(0, 2).equals("hi")) {
             return true;
         }
-            return false;
+        return false;
     }
 
     /* or35 - Return true if the given non-negative number is a multiple of 3
@@ -94,22 +96,23 @@ public class Kata{
      */
     public boolean or35(int n) {
 
-        if((n %  3 == 0) || (n % 5 == 0)) {
+        if ((n % 3 == 0) || (n % 5 == 0)) {
             return true;
         }
-            return false;
+        return false;
 
     }
 
-    /** SKIPPED - Given a non-empty string and an int n,
-    //return a new string where the char at index n has been removed.
-    //The value of n will be a valid index of a char in the
-    //original string (i.e. n will be in the range 0..str.length()-1 inclusive).
+    /**
+     * SKIPPED - Given a non-empty string and an int n,
+     * //return a new string where the char at index n has been removed.
+     * //The value of n will be a valid index of a char in the
+     * //original string (i.e. n will be in the range 0..str.length()-1 inclusive).
      **/
     public String missingChar(String str, int n) {
         String front = str.substring(0, n);
 
-        String back = str.substring(n+1, str.length());
+        String back = str.substring(n + 1, str.length());
 
         return front + back;
     }
@@ -126,8 +129,7 @@ public class Kata{
     public boolean posNeg(int a, int b, boolean negative) {
         if (negative) {
             return ((a < 0) && (b < 0));
-        }
-        else {
+        } else {
             return ((a < 0) && (b > 0) || (a > 0) && (b < 0));
         }
 
@@ -138,10 +140,9 @@ public class Kata{
     public boolean nearHundred(int n) {
         //int num = Math.abs(n);
 
-        if((Math.abs(100 - n) <= 10) || (Math.abs(200 - n) <= 10)) {
+        if ((Math.abs(100 - n) <= 10) || (Math.abs(200 - n) <= 10)) {
             return true;
-        }
-        else {
+        } else {
             return false;
         }
 
@@ -151,10 +152,9 @@ public class Kata{
     //return true if one if them is 10 or if their sum is 10.*/
     public boolean makes10(int a, int b) {
 
-        if((a + b == 10) || (a == 10) || (b == 10)) {
+        if ((a + b == 10) || (a == 10) || (b == 10)) {
             return true;
-        }
-        else {
+        } else {
             return false;
         }
     }
@@ -167,17 +167,16 @@ public class Kata{
     //Return true if we are in trouble. */
     public boolean loudParrot(boolean t, int h) {
 
-        if((t == true) && (h < 7)) {
+        if ((t == true) && (h < 7)) {
             return true;
-        }
-        else if((t == true) && (h > 23)) {
+        } else if ((t == true) && (h > 23)) {
             return true;
-        }
-        else {
+        } else {
             return false;
         }
 
     }
+
     /* diff21 *use math.abs* Given an int n,
     //return the absolute difference between n and 21,
     //except return double the absolute difference if n is over 21.
@@ -185,24 +184,22 @@ public class Kata{
     public int diff21(int n) {
         int adiff = Math.abs(n - 21);
 
-        if(adiff > 21) {
+        if (adiff > 21) {
             return (adiff * 2);
-        }
-
-        else {
+        } else {
             return adiff;
         }
     }
+
     /* doubleSum - Given two int values, return their sum.
     //Unless the two values are the same, then return double their sum.
      */
     public int doubleSum(int a, int b) {
         int sum = (a + b);
 
-        if(a == b) {
+        if (a == b) {
             return (sum * 2);
-        }
-        else {
+        } else {
             return sum;
 
         }
@@ -230,15 +227,11 @@ public class Kata{
     public String describeDay(int day) {
 
 
-        if ((day <= 6) && (day >= 2) ) {
+        if ((day <= 6) && (day >= 2)) {
             return "Today is a Weekday";
-        }
-
-        else if ((day == 7) || (day == 1) ) {
+        } else if ((day == 7) || (day == 1)) {
             return "It's the weekend!";
-        }
-
-        else {
+        } else {
             return "It is the second Tuesday of next week..";
         }
 
